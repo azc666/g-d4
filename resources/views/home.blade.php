@@ -86,6 +86,6 @@
     </div>
 
   </div>
-  {{--
-  <x-footer /> --}}
+
+  <x-footer />
 </x-home-layout>

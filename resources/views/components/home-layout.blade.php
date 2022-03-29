@@ -40,12 +40,13 @@
         <main>
             {{ $slot }}
         </main>
-        <x-footer />
+
     </div>
 
     @stack('modals')
 
     @livewireScripts
+    {{-- <x-footer /> --}}
 </body>
 
 </html>

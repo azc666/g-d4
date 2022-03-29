@@ -3,9 +3,6 @@
   <x-slot name="title">G+D Services</x-slot>
 
   <div class="pb-0 mt-10 mb-2 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
-    {{-- <div
-      class="flex p-8 pb-0 sm:pb-2 md:-mb-6 sm:mt-12 mx-auto container background-trans border rounded-lg shadow-lg">
-      --}}
 
       <div class="flex p-12">
 
@@ -84,3 +81,4 @@
     <div class="container pb-40 sm:pb-12 mx-auto flex flex-wrap">
 
 </x-home-layout>
+<x-footer />

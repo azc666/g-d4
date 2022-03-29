@@ -33,6 +33,10 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
+Route::get('/sendfiles', function () {
+    return view('sendfiles');
+})->name('sendfiles');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

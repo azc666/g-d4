@@ -1954,6 +1954,10 @@ select{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
+.hover\:text-teal-100:hover{
+  --tw-text-opacity: 1;
+  color: rgb(204 251 241 / var(--tw-text-opacity));
+}
 .hover\:shadow-2xl:hover{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -2164,6 +2168,9 @@ select{
   }
   .sm\:ml-0{
     margin-left: 0px;
+  }
+  .sm\:mb-8{
+    margin-bottom: 2rem;
   }
   .sm\:block{
     display: block;
@@ -2381,6 +2388,10 @@ select{
   }
   .md\:border-l{
     border-left-width: 1px;
+  }
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 1024px){

@@ -6,7 +6,7 @@
                 <br />
                 <span class="text-base line-height-none"><span class="italic"> Imaging at the Speed of
                         Business</span><br>
-                    Hours of Operation: M-F 9:30am-5pm</span>
+                    Hours of Operation: M-F 9:00am-5pm</span>
 
             </p>
         </div>

@@ -23,8 +23,7 @@
               <img class="w-auto mx-auto object-cover rounded" src="/assets/GDBuilding2.png" alt="G+D Home Office">
               {{-- </a> --}}
             <div class="flex justify-between">
-              <div class="block pt-2 pl-6 mb-0 text-sm sm:text-base text-gray-800 font-bold">Hours: M-F 9:30am -
-                5pm</div>
+              <div class="block pt-2 pl-6 mb-0 text-sm sm:text-base text-gray-800 font-bold">Hours: M-F &nbsp; 9am-5pm</div>
               {{-- <div class="block pt-2 pr-2 mb-0 text-sm sm:text-base text-gray-800 font-bold">Hours: M-F 9:30am -
                 5pm <span class="text-red-500 font-bold"> - Office Closed for Thanksgiving 11/25-11/26</span></div> --}}
               <div class="pt-2 pr-6 mb-0 text-right text-sm sm:text-base text-gray-800 font-bold">The Home Office -

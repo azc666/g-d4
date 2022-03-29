@@ -29,6 +29,10 @@ Route::get('/testimonials', function () {
     return view('testimonials');
 })->name('testimonials');
 
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

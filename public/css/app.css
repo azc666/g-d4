@@ -1474,6 +1474,9 @@ select{
 .p-10{
   padding: 2.5rem;
 }
+.p-8{
+  padding: 2rem;
+}
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1587,6 +1590,9 @@ select{
 }
 .pb-40{
   padding-bottom: 10rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
 }
 .text-left{
   text-align: left;
@@ -2295,6 +2301,9 @@ select{
   .sm\:pb-12{
     padding-bottom: 3rem;
   }
+  .sm\:pb-2{
+    padding-bottom: 0.5rem;
+  }
   .sm\:text-left{
     text-align: left;
   }
@@ -2351,6 +2360,9 @@ select{
   }
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+  .md\:-mb-6{
+    margin-bottom: -1.5rem;
   }
   .md\:grid{
     display: grid;

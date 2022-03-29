@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+
+@import url('https://use.typekit.net/lln4snf.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Chicle&display=swap');
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

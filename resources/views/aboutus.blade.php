@@ -2,12 +2,10 @@
 
 <x-slot name="title">About Us</x-slot>
 
-{{-- <div class="pb-0 mt-10 mb-2 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg"> --}}
-
   <div class="flex p-12 mt-20 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
 
     <div class="w-1 sm:w-1/4">
-      <img class="w-0 sm:w-full mr-12" src="/assets/posters/homeimg.jpg" alt="">
+      <img class="w-0 md:w-full mr-12" src="/assets/posters/homeimg.jpg" alt="">
     </div>
 
     <div class="w-full sm:w-3/4">
@@ -34,14 +32,8 @@
       <p
         class="font-semibold text-center sm:text-2xl text-gray-700 text-semibold sm:ml-12 mb-4 md:mb-16 sm:mr-6 font-myriad">
         Graphics + Design<br><span class="italic sm:text-xl">Imaging at the Speed of Business</span> </p>
-
-
-
     </div>
-
   </div>
-
-{{-- </div> --}}
 
 </x-home-layout>
 <x-footer />

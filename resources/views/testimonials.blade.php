@@ -2,17 +2,9 @@
 
   <x-slot name="title">Testimonials</x-slot>
 
-  {{-- <div
-    class="flex xxs:p-10 sm:p-8 xxs:mb-16 sm:pb-20 md:mb-6 sm:mt-12 mx-auto container background-trans border rounded-lg shadow-lg">
-    --}}
-
     <div class="pb-0 mt-10 mb-2 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
 
       <div class="flex p-10">
-
-        {{-- <div class="w-1 sm:w-1/4">
-          <img class="w-0 sm:w-50 mr-12" src="/assets/posters/homeimg.jpg" alt="">
-        </div> --}}
 
         <div class="w-full">
           <h1 class="text-4xl sm:text-5xl xl:text-6xl text-gray-800 sm:mb-2 sm:mx-auto text-center font-chicle">
@@ -23,7 +15,6 @@
 
             <div
               class="self-start max-w-md py-4 px-8 mt-12 bg-red-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              {{-- <div class=""> --}}
                 <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/BLUE_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.1rem] hover:text-indigo-600 hover:font-medium">The
@@ -32,8 +23,6 @@
                   projects
                   and our quick turnaround print jobs with the same level of expertise and customer care. I would highly
                   recommend them!</p>
-                {{--
-              </div> --}}
               <div class="flex justify-end mt-4">
                 <div class="text-base italic font-medium text-indigo-500">– Erin Dixon, Art Director, The University
                   of Tampa</div>
@@ -41,8 +30,7 @@
             </div>
 
             <div
-              class="self-start max-w-md py-4 px-8 mt-12 bg-yellow-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              {{-- <div> --}}
+              class="self-start max-w-md md:py-4 px-8 sm:-mt-32 md:mt-12 bg-yellow-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
                 <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/RED_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.125rem] hover:text-indigo-600 hover:font-medium">Abe
@@ -56,8 +44,6 @@
                   Their response time and attention to detail is outstanding. You can always expect honesty, creativity,
                   quality results and quick turnaround from Graphics + Design.
                 </p>
-                {{--
-              </div> --}}
               <div class="flex justify-end mt-4">
                 <div class="text-base italic font-medium text-indigo-500">– Robert Blount, President, Abe Brown
                   Ministries
@@ -66,8 +52,7 @@
             </div>
 
             <div
-              class="self-start max-w-md py-4 px-8 -mt-32 bg-indigo-100 shadow-2xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              {{-- <div> --}}
+              class="self-start max-w-md py-4 px-8 sm:mt-4 md:-mt-32 bg-indigo-100 shadow-2xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
                 <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/RED_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.125rem] hover:text-indigo-600 hover:font-medium">G+D’s
@@ -80,8 +65,6 @@
                   and it is a
                   pleasure to work with them.
                 </p>
-                {{--
-              </div> --}}
               <div class="flex justify-end mt-4">
                 <div class="text-base italic font-medium text-indigo-500">– S.T., Creative Services Manager, Holland &
                   Knight</div>
@@ -89,37 +72,27 @@
             </div>
 
             <div
-              class="self-start max-w-md py-4 px-8 mt-12 bg-lime-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              {{-- <div> --}}
+              class="self-start max-w-md py-4 px-8 sm:mt-4 md:mt-12 bg-lime-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64transform transition duration-500 hover:scale-105 hover:shadow-2xl">
                 <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/YELLOW_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.125rem] hover:text-indigo-600 hover:font-medium">Much
                   thanks to you and your staff for your constant
                   professionalism and dedication to your clients. We appreciate you
                   more than you know.</p>
-                {{--
-              </div> --}}
               <div class="flex justify-end mt-4">
                 <div class="text-base italic font-medium text-indigo-500">– Nelli Kieffer, Office Manager, Ye Mystic
                   Krewe
                   of Gasparilla</div>
               </div>
             </div>
-
           </div>
-
           <p
             class="font-semibold text-center text-2xl sm:text-4xl text-gray-700 text-semibold sm:ml-12 xxs:mb-4 sm:mb-4 md:mb-0 -mt-8 sm:mr-6 font-myriad">
             Graphics + Design<br><span class="italic text-xl sm:text-2xl">Imaging at the Speed of Business</span> </p>
-
         </div>
-
       </div>
-
     </div>
 
     <div class="container pb-40 sm:pb-12 mx-auto flex flex-wrap">
-
-      {{-- @endsection --}}
 </x-home-layout>
 <x-footer />

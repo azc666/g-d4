@@ -3,9 +3,6 @@
   <x-slot name="title">G+D Contact Us</x-slot>
 
   <div class="pb-20 mt-10 -mb-20 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
-    {{-- <div
-      class="flex p-8 pb-0 sm:pb-2 md:-mb-6 sm:mt-12 mx-auto container background-trans border rounded-lg shadow-lg">
-      --}}
 
       <div class="flex pl-6 pt-12 pr-0">
 
@@ -38,9 +35,6 @@
 
               <div class="inline-flex space-x-6 text-xl">
                 <span class="lg:visible self-center">
-                  {{-- <img class="lg:self-center" src="assets/icons/phone2.png" alt="" />
-                  &nbsp;&nbsp; --}}
-
                   <a href="tel:8132549444" class="hover:text-gray-600">813-254-9444</a>
                 </span>
 
@@ -52,17 +46,10 @@
             </div>
           </div>
 
-          {{-- <div class="xxs:-mt-26 xxs:ml-6 xxs:w-80 xs:w-88 xs:ml-8 xs:mr-4 md:pl-3 lg:pl-16 2xl:pl-80"> --}}
             <div class="p-8 -mt-16">
-
-              {{-- <div
-                class="p-2 justify-items-center bg-teal-300 opacity-75 order-solid border-2 border-gray-600 rounded">
-                --}}
 
                 <livewire:contact-form />
 
-                {{--
-              </div> --}}
             </div>
           </div>
         </div>

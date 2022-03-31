@@ -63,6 +63,43 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Responsive Navigation Menu -->
+	<div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+				{{ __('Home') }}
+				</x-jet-nav-link>
+		</div>
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('aboutus') }}" :active="request()->routeIs('aboutus')">
+				{{ __('About Us') }}
+				</x-jet-nav-link>
+		</div>
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('testimonials') }}" :active="request()->routeIs('testimonials')">
+				{{ __('Testimonials') }}
+				</x-jet-nav-link>
+		</div>
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('services') }}" :active="request()->routeIs('services')">
+				{{ __('Services') }}
+				</x-jet-nav-link>
+		</div>
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('sendfiles') }}" :active="request()->routeIs('sendfiles')">
+				{{ __('Send Files') }}
+				</x-jet-nav-link>
+		</div>
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('contactus') }}" :active="request()->routeIs('contactus')">
+				{{ __('Contact Us') }}
+				</x-jet-nav-link>
+		</div>
+		<div class="pt-1 pb-1 -space-y-1">
+			<x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+				{{ __('Dashboard') }}
+			</x-jet-responsive-nav-link>
+		</div>
+	</div>
 
 </nav>

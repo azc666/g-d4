@@ -39,8 +39,8 @@
 									</dd>
 								</div>
 
-								<div class="mt-6">
-									<dt class="sr-only">Phone number</dt>
+								<div class="md:mt-6">
+									<dt class="sr-only">Fax number</dt>
 									<dd class="flex">
 										<!-- Heroicon name: outline/fax -->
 										<svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -54,7 +54,7 @@
 									</dd>
 								</div>
 
-								<div class="mt-6">
+								<div class="md:mt-6">
 									<dt class="sr-only">Email</dt>
 									<dd class="flex">
 										<!-- Heroicon name: outline/mail -->
@@ -63,108 +63,97 @@
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 												d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 										</svg>
-										<span class="ml-3">
+										<span class="ml-3 mb-8">
 											<a href="mailto:support@g-d.com">support@g-d.com</a>
 										</span>
 									</dd>
 								</div>
 							</dl>
-
 						</div>
-
-
 					</div>
+
 					<div class="bg-teal-300 opacity-80 py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
-
-
 
 						<div class="max-w-lg mx-auto lg:max-w-none">
 
 							<form wire:submit.prevent="submitForm" method="POST" class="grid grid-cols-1 gap-y-6">
 								@csrf
 
+								@if (session()->has('message') && session('valid') === 'valid')
+								<div
+									class="block w-full p-4 rounded-lg bg-green-300 border-2 border-green-800 text-green-900 text-base font-medium">
+									<div class="flex justify-between">
+										<div class="flex-shrink-0 pr-4">
+											<!-- Heroicon name: solid/check-circle -->
+											<svg class="h-5 w-5 text-green-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												fill="currentColor" aria-hidden="true">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd" />
+											</svg>
+										</div>
 
+										<div>
+											{{ session('message') }}
+										</div>
 
-								{{-- <div class="sm:col-span-2"> --}}
-									@if (session()->has('message') && session('valid') === 'valid')
-									<div
-										class="block w-full p-4 rounded-lg bg-green-300 border-2 border-green-800 text-green-900 text-base font-medium">
-										<div class="flex justify-between">
-											<div class="flex-shrink-0 pr-4">
-												<!-- Heroicon name: solid/check-circle -->
-												<svg class="h-5 w-5 text-green-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													fill="currentColor" aria-hidden="true">
-													<path fill-rule="evenodd"
-														d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-														clip-rule="evenodd" />
-												</svg>
-											</div>
-
-											<div>
-												{{ session('message') }}
-											</div>
-
-											<div class="ml-auto pl-3">
-												<div class="-mx-1.5 -my-1.5">
-													<button type="button" onclick="window.location.href='/';"
-														class="inline-flex rounded-md p-1.5 text-green-700 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600">
-														<span class="sr-only">Dismiss</span>
-														<!-- Heroicon name: solid/x -->
-														<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-															fill="currentColor" aria-hidden="true">
-															<path fill-rule="evenodd"
-																d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-																clip-rule="evenodd" />
-														</svg>
-													</button>
-												</div>
+										<div class="ml-auto pl-3">
+											<div class="-mx-1.5 -my-1.5">
+												<button type="button" onclick="window.location.href='/';"
+													class="inline-flex rounded-md p-1.5 text-green-700 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600">
+													<span class="sr-only">Dismiss</span>
+													<!-- Heroicon name: solid/x -->
+													<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+														fill="currentColor" aria-hidden="true">
+														<path fill-rule="evenodd"
+															d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+															clip-rule="evenodd" />
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
+								</div>
 
-									@elseif (session()->has('message') && session('valid') !== 'valid')
-									<div
-										class="block w-full p-4 rounded-lg bg-red-300 border-2 border-red-800 text-red-800 text-base font-medium">
-										<div class="flex justify-between">
-											<div class="flex-shrink-0 pr-4">
-												<!-- Heroicon name: solid/check-circle -->
-												<svg class="h-5 w-5 text-red-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													fill="currentColor" aria-hidden="true">
-													<path fill-rule="evenodd"
-														d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-														clip-rule="evenodd" />
-												</svg>
-											</div>
+								@elseif (session()->has('message') && session('valid') !== 'valid')
+								<div
+									class="block w-full p-4 rounded-lg bg-red-300 border-2 border-red-800 text-red-800 text-base font-medium">
+									<div class="flex justify-between">
+										<div class="flex-shrink-0 pr-4">
+											<!-- Heroicon name: solid/check-circle -->
+											<svg class="h-5 w-5 text-red-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												fill="currentColor" aria-hidden="true">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd" />
+											</svg>
+										</div>
 
-											<div>
-												{{ session('message') }}
-											</div>
+										<div>
+											{{ session('message') }}
+										</div>
 
-											<div class="ml-auto pl-3">
-												<div class="-mx-1.5 -my-1.5">
-													<button type="button" onclick="window.location.href='/';"
-														class="inline-flex rounded-md p-1.5 text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-red-50 focus:ring-red-600">
-														<span class="sr-only">Dismiss</span>
-														<!-- Heroicon name: solid/x -->
-														<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-															fill="currentColor" aria-hidden="true">
-															<path fill-rule="evenodd"
-																d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-																clip-rule="evenodd" />
-														</svg>
-													</button>
-												</div>
+										<div class="ml-auto pl-3">
+											<div class="-mx-1.5 -my-1.5">
+												<button type="button" onclick="window.location.href='/';"
+													class="inline-flex rounded-md p-1.5 text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-red-50 focus:ring-red-600">
+													<span class="sr-only">Dismiss</span>
+													<!-- Heroicon name: solid/x -->
+													<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+														fill="currentColor" aria-hidden="true">
+														<path fill-rule="evenodd"
+															d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+															clip-rule="evenodd" />
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
-
-									@endif
-									{{--
-								</div> --}}
+								</div>
+								@endif
 
 								<div>
 									<label for="name" class="sr-only">Full name</label>
-									{{-- {{ $name }} --}}
 									<input wire:model="name" type="text" name="name" id="name"
 										class="block w-full shadow-lg py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md {{ $errors->has('name') ? "
 										border-2 border-red-500 bg-red-100" : '' }}" autocomplete="name" placeholder="Full name"
@@ -222,8 +211,6 @@
 				</div>
 			</div>
 		</div>
-		{{--
-		<x-jet-welcome /> --}}
 	</div>
 </div>
 </div>

@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('info', function () {
+    return phpinfo();
+});
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -36,6 +40,10 @@ Route::get('/services', function () {
 Route::get('/sendfiles', function () {
     return view('sendfiles');
 })->name('sendfiles');
+
+Route::get('/contactus', function () {
+    return view('contactus');
+})->name('contactus');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

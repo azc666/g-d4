@@ -1125,6 +1125,15 @@ select{
 .-mt-10{
   margin-top: -2.5rem;
 }
+.-mb-2{
+  margin-bottom: -0.5rem;
+}
+.-mb-40{
+  margin-bottom: -10rem;
+}
+.-mb-32{
+  margin-bottom: -8rem;
+}
 .block{
   display: block;
 }
@@ -2686,6 +2695,9 @@ select{
   }
   .sm\:pt-8{
     padding-top: 2rem;
+  }
+  .sm\:pt-2{
+    padding-top: 0.5rem;
   }
   .sm\:text-left{
     text-align: left;

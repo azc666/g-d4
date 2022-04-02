@@ -2,7 +2,7 @@
 
   <x-slot name="title">G+D Services</x-slot>
 
-  <div class="pb-0 mt-10 mb-2 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
+  <div class="-mb-32 sm:mb-8 mt-2 sm:mt-10 mx-8 sm:mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
 
       <div class="flex p-12">
 
@@ -11,10 +11,10 @@
         </div>
 
         <div class="w-full sm:w-3/4">
-          <h1 class="mb-2 text-4xl text-gray-800 sm:pl-12 text-center sm:text-left font-chicle">
+          <h1 class="text-4xl md:text-6xl text-gray-800 mb-2 sm:mb-10 -mt-6 sm:mt-0 sm:pl-12 text-center sm:text-left font-chicle">
             Our Services
           </h1>
-          <h3 class="text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
+          <h3 class="pt-4 sm:pt-0 text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
             Printing
           </h3>
           <p class="text-base sm:text-xl text-gray-700 sm:ml-12 mb-2 sm:mb-4 sm:mr-6 font-myriad">
@@ -27,7 +27,7 @@
             carbonless sets.
           </p>
 
-          <h3 class="text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
+          <h3 class="pt-4 text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
             Mailing Services & Variable Data
           </h3>
           <p class="text-base sm:text-xl text-gray-700 sm:ml-12 mb-2 sm:mb-4 sm:mr-6 font-myriad">
@@ -45,7 +45,7 @@
             well, including Name Badges, Table Cards, Event Passes, and other digitally printed items.
           </p>
 
-          <h3 class="text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
+          <h3 class="pt-4 text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
             Posters and Trade Show Signage
           </h3>
           <p class="text-base sm:text-xl text-gray-700 sm:ml-12 pb-8 sm:mr-6 font-myriad">

@@ -29,10 +29,10 @@
           service, we strive for the best quality possible, at a fair price, and timely delivery.
         </p>
         <p>
-          See what our clients think of us on the <span
+          See what our clients think of us on the &nbsp; <span
             class="sm:text-xl text-semibold bg-teal-300 border-teal-800 border-2 rounded-lg p-1 pl-2 pr-2 text-teal-900 hover:bg-teal-500 hover:text-teal-200">
             <a href="/testimonials"><span class="leading-loose sm:leading-normal pt-2"> Testimonials</span></a></span>
-          page.
+          &nbsp; page.
         </p>
       </div>
 

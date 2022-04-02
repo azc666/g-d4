@@ -2098,12 +2098,24 @@ select{
 .first-letter\:mr-3::first-letter{
   margin-right: 0.75rem;
 }
+.first-letter\:font-chicle::first-letter{
+  font-family: Chicle, cursive;
+}
 .first-letter\:text-7xl::first-letter{
   font-size: 4.5rem;
   line-height: 1;
 }
 .first-letter\:font-bold::first-letter{
   font-weight: 700;
+}
+.first-letter\:font-semibold::first-letter{
+  font-weight: 600;
+}
+.first-letter\:font-medium::first-letter{
+  font-weight: 500;
+}
+.first-letter\:font-normal::first-letter{
+  font-weight: 400;
 }
 .first-letter\:uppercase::first-letter{
   text-transform: uppercase;
@@ -2513,6 +2525,12 @@ select{
   .sm\:mb-12{
     margin-bottom: 3rem;
   }
+  .sm\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+  .sm\:mb-10{
+    margin-bottom: 2.5rem;
+  }
   .sm\:block{
     display: block;
   }
@@ -2680,6 +2698,10 @@ select{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
   .sm\:leading-normal{
     line-height: 1.5;
   }
@@ -2749,6 +2771,10 @@ select{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 @media (min-width: 640px){

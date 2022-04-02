@@ -9,14 +9,12 @@
     </div>
 
     <div class="w-full sm:w-3/4">
-      <h1 class="text-4xl text-gray-800 mb-2 sm:mb-4 -mt-6 sm:mt-0 sm:pl-12 text-center sm:text-left font-chicle">
+      <h1 class="text-4xl md:text-6xl text-gray-800 mb-2 sm:mb-10 -mt-6 sm:mt-0 sm:pl-12 text-center sm:text-left font-chicle">
         Our Story
       </h1>
       <div class="text-lg sm:text-xl text-gray-700 sm:ml-12 mb-4 -mr-4 sm:mr-6 -ml-2 font-myriad">
-        <p class="pb-4 first-letter:uppercase first-line:tracking-wide
-  first-letter:text-7xl first-letter:font-bold first-letter:text-gray-700
-  first-letter:mr-3 first-letter:float-left">
-          Graphics + Design was formed in 1987 to provide dependable, personalized graphic services to the Tampa Bay
+        <p class="pb-4 first-line:tracking-wide first-letter:text-7xl first-letter:font-normal first-letter:font-chicle first-letter:text-gray-700 first-letter:mr-3 first-letter:float-left">
+          graphics + Design was formed in 1987 to provide dependable, personalized graphic services to the Tampa Bay
           business community. We are proud of our 35 years experience with commercial printing, and we continue to
           maintain the highest quality production standards.
         </p>

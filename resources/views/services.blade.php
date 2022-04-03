@@ -12,7 +12,7 @@
 
         <div class="w-full sm:w-3/4">
           <h1 class="text-4xl md:text-6xl text-gray-800 mb-2 sm:mb-10 -mt-6 sm:mt-0 sm:pl-12 text-center sm:text-left font-chicle">
-            Our Services
+            Services
           </h1>
           <h3 class="pt-4 sm:pt-0 text-2xl text-gray-800 sm:ml-12 text-left font-chicle">
             Printing

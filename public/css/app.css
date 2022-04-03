@@ -2827,6 +2827,12 @@ select{
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  .md\:pb-6{
+    padding-bottom: 1.5rem;
+  }
+  .md\:text-center{
+    text-align: center;
+  }
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;

@@ -37,7 +37,7 @@
       <p class="font-semibold sm:text-xl text-gray-700 italic sm:ml-12 sm:mr-6 font-myriad">
         Graphics + Design is your go-to, full service, print and mail resource!</p><br>
       <p
-        class="font-bold text-center sm:text-4xl text-gray-700 sm:ml-12 mb-4 sm:mb-12 sm:mr-6 sm:pt-8 font-myriad">
+        class="font-bold sm:text-4xl text-gray-700 sm:ml-12 mb-4 sm:mb-12 sm:mr-6 sm:pt-8 font-myriad">
         Graphics + Design<br><span class="italic sm:text-xl">Imaging at the Speed of Business</span> </p>
     </div>
   </div>

@@ -41,11 +41,11 @@
 						{{ __('Contact Us') }}
 					</x-jet-nav-link>
 				</div>
-				<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+				{{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 					<x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
 						{{ __('Dashboard') }}
 					</x-jet-nav-link>
-				</div>
+				</div> --}}
 			</div>
 
 
@@ -96,11 +96,11 @@
 				{{ __('Contact Us') }}
 				</x-jet-nav-link>
 		</div>
-		<div class="pt-1 pb-1 -space-y-1">
+		{{-- <div class="pt-1 pb-1 -space-y-1">
 			<x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
 				{{ __('Dashboard') }}
 			</x-jet-responsive-nav-link>
-		</div>
+		</div> --}}
 	</div>
 
 </nav>

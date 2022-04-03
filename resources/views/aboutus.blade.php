@@ -38,7 +38,7 @@
         Graphics + Design is your go-to, full service, print and mail resource!</p><br>
       <p
         class="font-bold sm:text-4xl text-gray-700 sm:ml-12 mb-4 sm:mb-12 sm:mr-6 sm:pt-8 font-myriad">
-        Graphics + Design<br><span class="italic sm:text-xl">Imaging at the Speed of Business</span> </p>
+        <span class="text-xl sm:text-4xl">Graphics + Design</span> <br><span class="italic sm:text-xl">Imaging at the Speed of Business</span> </p>
     </div>
   </div>
 

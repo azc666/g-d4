@@ -1160,6 +1160,18 @@ select{
 .-mt-2{
   margin-top: -0.5rem;
 }
+.-mt-36{
+  margin-top: -9rem;
+}
+.-mb-10{
+  margin-bottom: -2.5rem;
+}
+.mt-32{
+  margin-top: 8rem;
+}
+.mt-36{
+  margin-top: 9rem;
+}
 .block{
   display: block;
 }
@@ -1824,6 +1836,9 @@ select{
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pb-16{
+  padding-bottom: 4rem;
 }
 .text-left{
   text-align: left;
@@ -2595,6 +2610,24 @@ select{
   .sm\:-mt-6{
     margin-top: -1.5rem;
   }
+  .sm\:mb-36{
+    margin-bottom: 9rem;
+  }
+  .sm\:-mt-36{
+    margin-top: -9rem;
+  }
+  .sm\:-mt-20{
+    margin-top: -5rem;
+  }
+  .sm\:-mt-28{
+    margin-top: -7rem;
+  }
+  .sm\:-mt-24{
+    margin-top: -6rem;
+  }
+  .sm\:-mb-20{
+    margin-bottom: -5rem;
+  }
   .sm\:block{
     display: block;
   }
@@ -2829,6 +2862,9 @@ select{
   }
   .md\:pb-6{
     padding-bottom: 1.5rem;
+  }
+  .md\:pl-6{
+    padding-left: 1.5rem;
   }
   .md\:text-center{
     text-align: center;

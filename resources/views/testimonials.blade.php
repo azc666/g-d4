@@ -7,7 +7,7 @@
       <div class="flex p-10">
 
         <div class="w-full">
-          <h1 class="text-4xl sm:text-5xl xl:text-6xl text-gray-800 sm:mb-2 sm:mx-auto text-center font-chicle">
+          <h1 class="-mt-6 sm:mt-2 text-4xl sm:text-5xl xl:text-6xl text-gray-800 sm:mb-2 sm:mx-auto text-center font-chicle">
             Graphics+Design Testimonial Bulletin Board
           </h1>
 
@@ -66,8 +66,7 @@
                   pleasure to work with them.
                 </p>
               <div class="flex justify-end mt-4">
-                <div class="text-base italic font-medium text-indigo-500">– S.T., Creative Services Manager, Holland &
-                  Knight</div>
+                <div class="text-base italic font-medium text-indigo-500">– S.T., Creative Services Manager, Holland & Knight</div>
               </div>
             </div>
 

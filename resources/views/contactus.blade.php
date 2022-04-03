@@ -55,7 +55,7 @@
         </div>
 
         <div id="map" class="h-96 mt-32 sm:mt-20 ml-8 mr-8 mb-18 pb-8 flex">
-          <iframe class="rounded-lg shadow-2xl flex-1 -mt-6" frameborder="0" style="zoom:2"
+          <iframe class="rounded-lg shadow-2xl flex-1 -mt-6" frameborder="0" style="zoom:4"
             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwfFnBuFVaBQR0FFyUS7-9fY&key={{ env('GOOGLE_MAPS_KEY') }}"
             allowfullscreen></iframe>
         </div>

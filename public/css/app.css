@@ -1091,8 +1091,8 @@ select{
 .-mt-10{
   margin-top: -2.5rem;
 }
-.mr-36{
-  margin-right: 9rem;
+.mr-28{
+  margin-right: 7rem;
 }
 .mb-8{
   margin-bottom: 2rem;
@@ -1102,9 +1102,6 @@ select{
 }
 .-ml-1{
   margin-left: -0.25rem;
-}
-.mr-28{
-  margin-right: 7rem;
 }
 .block{
   display: block;
@@ -1117,6 +1114,9 @@ select{
 }
 .inline-flex{
   display: inline-flex;
+}
+.table{
+  display: table;
 }
 .grid{
   display: grid;
@@ -1229,6 +1229,9 @@ select{
 .max-w-xl{
   max-width: 36rem;
 }
+.max-w-5xl{
+  max-width: 64rem;
+}
 .max-w-6xl{
   max-width: 72rem;
 }
@@ -1237,12 +1240,6 @@ select{
 }
 .max-w-lg{
   max-width: 32rem;
-}
-.max-w-4xl{
-  max-width: 56rem;
-}
-.max-w-5xl{
-  max-width: 64rem;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -2106,16 +2103,8 @@ select{
   font-size: 6rem;
   line-height: 1;
 }
-.first-letter\:text-9xl::first-letter{
-  font-size: 8rem;
-  line-height: 1;
-}
 .first-letter\:font-normal::first-letter{
   font-weight: 400;
-}
-.first-letter\:text-gray-700::first-letter{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .first-letter\:text-gray-800::first-letter{
   --tw-text-opacity: 1;
@@ -2497,12 +2486,6 @@ select{
   .sm\:ml-0{
     margin-left: 0px;
   }
-  .sm\:mr-36{
-    margin-right: 9rem;
-  }
-  .sm\:-ml-64{
-    margin-left: -16rem;
-  }
   .sm\:block{
     display: block;
   }
@@ -2682,23 +2665,8 @@ select{
   .sm\:tracking-normal{
     letter-spacing: 0em;
   }
-  .sm\:first-letter\:text-8xl::first-letter{
-    font-size: 6rem;
-    line-height: 1;
-  }
-  .sm\:first-letter\:text-xl::first-letter{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  .sm\:first-letter\:text-9xl::first-letter{
-    font-size: 8rem;
-    line-height: 1;
-  }
   .sm\:first-letter\:text-\[7rem\]::first-letter{
     font-size: 7rem;
-  }
-  .sm\:first-letter\:font-normal::first-letter{
-    font-weight: 400;
   }
 }
 @media (min-width: 768px){

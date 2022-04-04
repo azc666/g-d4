@@ -14,7 +14,7 @@
           <div class="flex flex-wrap justify-between items-start">
 
             <div
-              class="self-start max-w-md py-4 px-8 mt-12 bg-red-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              class="self-start max-w-md py-4 px-8 mt-12 bg-red-100 shadow-xl rounded-lg my-20 sm:mx-auto transform transition duration-500 hover:scale-105 hover:shadow-2xl">
                 <img class="xxs:mx-auto ml-14 sm:ml-28 -mt-6 w-28 object-cover" src="assets/BLUE_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.1rem] hover:text-indigo-600 hover:font-medium">The

@@ -41,11 +41,23 @@
 						{{ __('Contact Us') }}
 					</x-jet-nav-link>
 				</div>
+
+@if (!Auth::user())
 				<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-					<x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+					<x-jet-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
 						{{ __('Make A Payment') }}
 					</x-jet-nav-link>
 				</div>
+@else
+			<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+				<x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+					{{ __('Dashboard') }}
+				</x-jet-nav-link>
+			</div>
+@endif
+
+
+
 			</div>
 
 

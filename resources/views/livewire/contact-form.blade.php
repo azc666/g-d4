@@ -10,7 +10,7 @@
 
 						<div class="max-w-lg mx-auto -mt-16 -pb-20">
 
-							<h2 class="pt-4 sm:pt-2 text-2xl sm:text-3xl font-bold tracking-tighter text-gray-700">
+							<h2 class="pt-4 sm:pt-2 text-2xl sm:text-4xl font-bold tracking-wide font-chicle text-gray-700">
 								Get in touch
 							</h2>
 							<p class="mt-3 text-lg leading-6 text-gray-500">

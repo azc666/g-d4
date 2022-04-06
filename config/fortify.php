@@ -61,6 +61,7 @@ return [
     |
     */
 
+    // 'home' => view('dashboard'),
     'home' => RouteServiceProvider::HOME,
 
     /*

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +47,13 @@ Route::get('/contactus', function () {
     return view('contactus');
 })->name('contactus');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
+
+Route::group(['middleware' => 'auth:sanctum', 'verified'], function () {
+    Route::post('/payments/pay', [PaymentController::class, 'pay'])->name('pay');
+    Route::get('/payments/approval', [PaymentController::class, 'approval'])->name('approval');
+    Route::get('/payments/cancelled', [PaymentController::class, 'cancelled'])->name('cancelled');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});

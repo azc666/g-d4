@@ -21,7 +21,7 @@ class DashboardController extends Controller
     //     $this->validateOnly($propertyName);
     // }
 
-    public function index(Currency $currencies, PaymentPlatform $paymentPlatform)
+    public function index(Request $request, Currency $currencies, PaymentPlatform $paymentPlatform)
     {
         $currencies = Currency::all();
         $currencies = Currency::orderBy('updated_at', 'ASC')->get();
@@ -30,6 +30,6 @@ class DashboardController extends Controller
         // Session::put('payment_platform', '');
         $paymentPlatforms = PaymentPlatform::all();
 // dd($paymentPlatforms);
-        return view('dashboard', compact('currencies', 'paymentPlatforms'));
+        return view('dashboard', compact('request', 'currencies', 'paymentPlatforms'));
     }
 }

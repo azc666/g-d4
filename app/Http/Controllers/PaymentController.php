@@ -24,7 +24,7 @@ class PaymentController extends Controller
     {
         // $request->request->add(['payment_platform' => session('payment_platform')]);
         // Session::put('', 'payment_platform');
-// dd($request);
+dd($request->all());
         $rules = [
             'value' => ['required', 'numeric', 'min:5'],
             'currency' => ['required', 'exists:currencies,iso'],

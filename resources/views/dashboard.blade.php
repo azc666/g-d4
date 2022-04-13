@@ -85,7 +85,7 @@
 												<label class=" text-gray-600 pb-2 mt-4">Select a Payment Method
 												</label>
 
-												<div class="form-group ml-6">
+												{{-- <div class="form-group ml-6">
 													<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 														<input type="radio" class="btn-check btn-outline-secondary rounded m-2 p-1"
 															name="payment_platform" id="btnradio1" autocomplete="off" value="PayPal">
@@ -100,10 +100,14 @@
 														</label>
 													</div>
 
-												</div>
+												</div> --}}
+
+<livewire:payment-platform-choice :paymentPlatform="$paymentPlatform"/>
+{{-- @dd($request->all()) --}}
 											</div>
 										</div>
 
+	{{-- @dd($paymentPlatform) --}}
 										<div class="text-center mt-12">
 											<button id="payButton" class="btn btn-primary btn-lg bg-blue-500 hover:font-semibold"
 												type="submit">Make a Payment {{ $request->value }}</button>

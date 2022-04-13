@@ -25,11 +25,10 @@ class DashboardController extends Controller
     {
         $currencies = Currency::all();
         $currencies = Currency::orderBy('updated_at', 'ASC')->get();
-        // Session::put('currencies', $currencies);
 
-        // Session::put('payment_platform', '');
-        $paymentPlatforms = PaymentPlatform::all();
+        $paymentPlatform = PaymentPlatform::all();
+        $value = $request->input('value');
 // dd($paymentPlatforms);
-        return view('dashboard', compact('request', 'currencies', 'paymentPlatforms'));
+        return view('dashboard', compact('request', 'currencies', 'paymentPlatform', 'value'));
     }
 }

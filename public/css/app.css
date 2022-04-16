@@ -930,11 +930,11 @@ select{
 .col-span-6{
   grid-column: span 6 / span 6;
 }
-.-m-2{
-  margin: -0.5rem;
-}
 .m-2{
   margin: 0.5rem;
+}
+.-m-2{
+  margin: -0.5rem;
 }
 .mx-auto{
   margin-left: auto;

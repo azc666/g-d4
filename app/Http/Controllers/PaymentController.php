@@ -20,43 +20,41 @@ class PaymentController extends Controller
         $this->paymentPlatformResolver = $paymentPlatformResolver;
     }
 
-    public function pay(Request $request)
+    public function pay(Request $request, PaymentPlatform $paymentPlatform)
     {
-        // $request->request->add(['payment_platform' => session('payment_platform')]);
-        // Session::put('', 'payment_platform');
-// dd($request->all());
-        $rules = [
+$payment_platforms = PaymentPlatform::all();
+// dd($payment_platforms[1]->id);
+        $request->validate([
             'value' => ['required', 'numeric', 'min:5'],
             'currency' => ['required', 'exists:currencies,iso'],
             'payment_message' => 'required|min:5',
-            'payment_platform' => ['required', 'exists:payment_platforms,id'],
-        ];
+            'payment_platform' => ['required', 'exists:payment_platforms,name'],
+        ]);
 
-        // dd($request->all());
+        $paymentPlatform = resolve(PayPalService::class);
 
-        $request->validate($rules);
-// dd($request);
-        // $paymentPlatform = resolve(PayPalService::class);
-        $paymentPlatform = $this->paymentPlatformResolver->resolveService($request->payment_platform);
+        // $paymentPlatform = $this->paymentPlatformResolver->resolveService($request->payment_platform);
 
-        session()->put('paymentPlatformId', $request->payment_platform);
-// dd(session('paymentPlatformId'));
+        // session()->put('paymentPlatformId', $request->payment_platform);
         return $paymentPlatform->handlePayment($request);
     }
 
     public function approval()
     {
-        if (session()->has('paymentPlatformId')) {
-            $paymentPlatform = $this->paymentPlatformResolver
-                ->resolveService(session()->get('paymentPlatformId'));
+        $paymentPlatform = resolve(PayPalService::class);
 
-// dd(session('paymentPlatformId'));
-                return $paymentPlatform->handleApproval();
-        }
+        return $paymentPlatform->handleApproval();
+//         if (session()->has('paymentPlatformId')) {
+//             $paymentPlatform = $this->paymentPlatformResolver
+//                 ->resolveService(session()->get('paymentPlatformId'));
 
-        return redirect()
-            ->route('dashboard')
-            ->withErrors('We cannot retrieve your payment platform. Try again, please.');
+// // dd(session('paymentPlatformId'));
+//                 return $paymentPlatform->handleApproval();
+//         }
+
+//         return redirect()
+//             ->route('dashboard')
+//             ->withErrors('We cannot retrieve your payment platform. Try again, please.');
     }
 
     public function cancelled()

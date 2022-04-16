@@ -14,11 +14,20 @@
             </label>
 
         </div>
+        @error('payment_platform')
+        <div class="block w-full text-red-500 text-base">
+            {{ $message }}
+        </div>
+        @enderror
+
+
         <div class="mt-3">
             @if ($platform === null)
             @else
             @include('components.' . $platform . '-collapse')
             @endif
         </div>
+
+
     </div>
 </div>

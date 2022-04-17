@@ -43,6 +43,19 @@
 				{{ Session::put('currency', '') }}
 				@endif
 
+				@if (session('cancelled') === 'cancelled')
+				<div class="text-center pb-4">
+					<x-flash type="error">
+						You have cancelled your payment!
+					</x-flash>
+				</div>
+				{{ Session::put('payment', '') }}
+				{{ Session::put('name', '') }}
+				{{ Session::put('amount', '') }}
+				{{ Session::put('currency', '') }}
+				{{ Session::put('cancelled', '') }}
+				@endif
+
 				<div class="flex mx-auto justify-center">
 					<div>
 						<img src="assets/g-d_logo.gif" alt="" class="ml-2 mt-1 h-12">

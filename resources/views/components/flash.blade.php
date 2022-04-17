@@ -52,10 +52,11 @@
 
       <div class="ml-auto pl-3">
         <div class="-mx-1.5 -my-1.5">
-          @if (session('payment') === 'yes_payment')
+          @if (session('payment') === 'yes_payment' || session('cancelled') === 'cancelled')
             {{-- {{ Session::put('clearCart', false) }} --}}
             <button type="button" onclick="window.location.href='{{ '/dashboard' }}';"
             {{ Session::put('payment', '') }}
+            {{ Session::put('cancelled', '') }}
           @else
             <button type="button" onclick="window.location.href='{{ '/dashboard' }}';"
           @endif

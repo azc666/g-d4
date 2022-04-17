@@ -44,23 +44,14 @@ $payment_platforms = PaymentPlatform::all();
         $paymentPlatform = resolve(PayPalService::class);
 
         return $paymentPlatform->handleApproval();
-//         if (session()->has('paymentPlatformId')) {
-//             $paymentPlatform = $this->paymentPlatformResolver
-//                 ->resolveService(session()->get('paymentPlatformId'));
-
-// // dd(session('paymentPlatformId'));
-//                 return $paymentPlatform->handleApproval();
-//         }
-
-//         return redirect()
-//             ->route('dashboard')
-//             ->withErrors('We cannot retrieve your payment platform. Try again, please.');
     }
 
     public function cancelled()
     {
+        Session::put('cancelled', 'cancelled');
+
         return redirect()
-            ->route('dashboard')
-            ->withErrors('You cancelled the payment.');
+            ->route('dashboard');
+            // ->withErrors('You cancelled the payment.');
     }
 }

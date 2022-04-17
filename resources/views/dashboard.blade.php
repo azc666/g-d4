@@ -10,9 +10,38 @@
 		</div>
 	</x-slot> --}}
 
+
+
 	<div class="py-10">
+
 		<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+
 			<div class="p-12 mt-2 sm:mt-10 mx-8 sm:mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
+
+				@if (session('payment') === 'yes_payment')
+				<div class="text-center pb-4">
+					<x-flash type="success">
+						Thanks, {{ session('name') }}. We received your {{ session('amount') }} {{ session('currency') }} payment"
+					</x-flash>
+				</div>
+				{{ Session::put('payment', '') }}
+				{{ Session::put('name', '') }}
+				{{ Session::put('amount', '') }}
+				{{ Session::put('currency', '') }}
+				@endif
+
+				@if (session('payment') === 'no_payment')
+				<div class="text-center pb-4">
+					<x-flash type="error">
+						"We cannot capture the payment. Please try again"
+					</x-flash>
+				</div>
+				{{ Session::put('payment', '') }}
+				{{ Session::put('name', '') }}
+				{{ Session::put('amount', '') }}
+				{{ Session::put('currency', '') }}
+				@endif
 
 				<div class="flex mx-auto justify-center">
 					<div>
@@ -102,12 +131,12 @@
 
 												</div> --}}
 
-<livewire:payment-platform-choice :paymentPlatform="$paymentPlatform"/>
-{{-- @dd($request->all()) --}}
+												<livewire:payment-platform-choice :paymentPlatform="$paymentPlatform" />
+												{{-- @dd($request->all()) --}}
 											</div>
 										</div>
 
-	{{-- @dd($paymentPlatform) --}}
+										{{-- @dd($paymentPlatform) --}}
 										<div class="text-center mt-12">
 											<button id="payButton" class="btn btn-primary btn-lg bg-blue-500 hover:font-semibold"
 												type="submit">Make a Payment {{ $request->value }}</button>

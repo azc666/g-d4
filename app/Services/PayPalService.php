@@ -67,11 +67,17 @@ class PayPalService
       $amount = $payment->value;
       $currency = $payment->currency_code;
 
-      return redirect()->route('dashboard')
-        ->withSuccess(['payment' => "Thanks, {$name}. We received your {$amount} {$currency} payment"]);
+      Session::put('name', $name);
+      Session::put('amount', $amount);
+      Session::put('currency', $currency);
+
+      Session::put('payment', 'yes_payment');
+      return redirect()->route('dashboard');
+        // ->withSuccess(['payment' => "Thanks, {$name}. We received your {$amount} {$currency} payment"]);
     }
-dd('hola');
-    return redirect()->route('dashboard')->withErrors('We cannot capture the payment. Please try again');
+      Session::put('payment', 'no_payment');
+      return redirect()->route('dashboard');
+        // ->withErrors('We cannot capture the payment. Please try again');
   }
 
   public function createOrder($value, $currency)

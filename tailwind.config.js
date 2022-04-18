@@ -21,6 +21,10 @@ module.exports = {
             backgroundImage: theme => ({
                 'tie-dye': "url('/assets/tie-dye2.png')",
             }),
+            screens: {
+                'xs': '425px',
+                ...defaultTheme.screens,
+            },
         },
     },
 

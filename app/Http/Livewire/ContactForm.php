@@ -30,9 +30,12 @@ class ContactForm extends Component
     protected $rules = [
         'name' => 'required|min:3|max:50',
         'email' => 'required|email',
-        // 'phone' => 'nullable|regex:^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$^',
         'phone' => 'nullable|phone:US,mobile',
         'message' => 'required|min:5|max:255',
+    ];
+
+    protected $messages = [
+        'phone' => 'The phone number is not valid.',
     ];
 
     public function mount()

@@ -1,6 +1,6 @@
 <nav x-data="{ open: false }" class="bg-teal-300 border-b-2 border-red-100">
 	<!-- Primary Navigation Menu -->
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+	<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex justify-between h-16">
 			<div class="flex">
 				<!-- Logo -->
@@ -41,16 +41,17 @@
 						{{ __('Contact Us') }}
 					</x-jet-nav-link>
 				</div>
-				<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+				{{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 					<x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
 						{{ __('Dashboard') }}
 					</x-jet-nav-link>
-				</div>
+				</div> --}}
 			</div>
 
 
 			<!-- Hamburger -->
 			<div class="-mr-2 flex items-center sm:hidden">
+				<span class="font-myriad font-bold text-xl mr-28 xs:mr-36">Graphics + Design</span>
 				<button @click="open = ! open"
 					class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition">
 					<svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -95,11 +96,11 @@
 				{{ __('Contact Us') }}
 				</x-jet-nav-link>
 		</div>
-		<div class="pt-1 pb-1 -space-y-1">
+		{{-- <div class="pt-1 pb-1 -space-y-1">
 			<x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
 				{{ __('Dashboard') }}
 			</x-jet-responsive-nav-link>
-		</div>
+		</div> --}}
 	</div>
 
 </nav>

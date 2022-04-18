@@ -2,20 +2,20 @@
 
   <x-slot name="title">Testimonials</x-slot>
 
-    <div class="pb-0 mt-10 mb-2 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
+    <div class="pb-0 mt-10 mb-2 mx-4 sm:mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
 
       <div class="flex p-10">
 
         <div class="w-full">
-          <h1 class="text-4xl sm:text-5xl xl:text-6xl text-gray-800 sm:mb-2 sm:mx-auto text-center font-chicle">
+          <h1 class="-mt-6 sm:mt-2 text-4xl sm:text-5xl xl:text-6xl text-gray-800 sm:mb-2 sm:mx-auto text-center font-chicle">
             Graphics+Design Testimonial Bulletin Board
           </h1>
 
           <div class="flex flex-wrap justify-between items-start">
 
             <div
-              class="self-start max-w-md py-4 px-8 mt-12 bg-red-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-                <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/BLUE_PUSHPIN.png" alt="">
+              class="self-start max-w-md py-4 px-8 mt-12 bg-red-100 shadow-xl rounded-lg my-20 sm:mx-auto transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                <img class="xxs:mx-auto ml-14 sm:ml-28 -mt-6 w-28 object-cover" src="assets/BLUE_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.1rem] hover:text-indigo-600 hover:font-medium">The
                   high-quality print and design services provided by
@@ -30,8 +30,8 @@
             </div>
 
             <div
-              class="self-start max-w-md md:py-4 px-8 sm:-mt-32 md:mt-12 bg-yellow-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-                <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/RED_PUSHPIN.png" alt="">
+              class="self-start max-w-md md:py-4 px-8 -mt-10 sm:-mt-32 md:mt-12 bg-yellow-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                <img class="xxs:mx-auto ml-14 sm:ml-28 sm:-mt-6 w-28 object-cover" src="assets/RED_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.125rem] hover:text-indigo-600 hover:font-medium">Abe
                   Brown Ministries has worked with Graphics + Design
@@ -52,8 +52,8 @@
             </div>
 
             <div
-              class="self-start max-w-md py-4 px-8 sm:mt-4 md:-mt-32 bg-indigo-100 shadow-2xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-                <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/RED_PUSHPIN.png" alt="">
+              class="self-start max-w-md py-4 px-8 -mt-10 sm:mt-4 md:-mt-32 bg-indigo-100 shadow-2xl rounded-lg my-20 sm:mx-auto 2xl:mr-64 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                <img class="xxs:mx-auto ml-14 sm:ml-28 -mt-6 w-28 object-cover" src="assets/RED_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.125rem] hover:text-indigo-600 hover:font-medium">G+D’s
                   dedication to customer service is evident in all
@@ -66,14 +66,13 @@
                   pleasure to work with them.
                 </p>
               <div class="flex justify-end mt-4">
-                <div class="text-base italic font-medium text-indigo-500">– S.T., Creative Services Manager, Holland &
-                  Knight</div>
+                <div class="text-base italic font-medium text-indigo-500">– S.T., Creative Services Manager, Holland & Knight</div>
               </div>
             </div>
 
             <div
-              class="self-start max-w-md py-4 px-8 sm:mt-4 md:mt-12 bg-lime-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-                <img class="xxs:mx-auto sm:ml-28 -mt-6 w-28 object-cover" src="assets/YELLOW_PUSHPIN.png" alt="">
+              class="self-start max-w-md py-4 px-8 -mt-10 sm:mt-4 md:mt-12 bg-lime-100 shadow-xl rounded-lg my-20 sm:mx-auto 2xl:mr-64transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                <img class="xxs:mx-auto ml-14 sm:ml-28 -mt-6 w-28 object-cover" src="assets/YELLOW_PUSHPIN.png" alt="">
                 <img class="-ml-4 -mt-6 w-16 h-16 object-cover" src="assets/quotation-marks.png" alt="">
                 <p class="mt-2 text-gray-600 font-myriad text-[1.125rem] hover:text-indigo-600 hover:font-medium">Much
                   thanks to you and your staff for your constant

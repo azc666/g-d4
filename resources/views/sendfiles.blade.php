@@ -2,7 +2,7 @@
 
   <x-slot name="title">G+D Sending Files</x-slot>
 
-  <div class="pb-0 mt-10 mb-2 mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
+  <div class="-mb-32 sm:mb-8 mt-2 sm:mt-10 mx-8 sm:mx-20 bg-gray-100 bg-opacity-60 background-trans rounded-lg shadow-lg">
 
       <div class="flex p-12">
 
@@ -11,7 +11,7 @@
         </div>
 
         <div class="w-full sm:w-3/4">
-          <h1 class="text-4xl text-gray-800 sm:pl-12 mb-4 text-center sm:text-left font-chicle">
+          <h1 class="text-4xl md:text-6xl text-gray-800 sm:pl-12 mb-4 -mt-6 sm:mt-0 md:pb-6 text-center sm:text-left font-chicle">
             Sending Files
           </h1>
 

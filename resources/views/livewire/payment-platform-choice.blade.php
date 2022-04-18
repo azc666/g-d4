@@ -24,7 +24,7 @@
         <div class="mt-3">
             @if ($platform === null)
             @else
-            @include('components.' . $platform . '-collapse')
+            @include('components.' . strtolower($platform) . '-collapse')
             @endif
         </div>
 

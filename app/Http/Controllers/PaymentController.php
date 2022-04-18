@@ -22,8 +22,8 @@ class PaymentController extends Controller
 
     public function pay(Request $request, PaymentPlatform $paymentPlatform)
     {
-$payment_platforms = PaymentPlatform::all();
-// dd($payment_platforms[1]->id);
+        $payment_platforms = PaymentPlatform::all();
+
         $request->validate([
             'value' => ['required', 'numeric', 'min:5'],
             'currency' => ['required', 'exists:currencies,iso'],
@@ -31,11 +31,11 @@ $payment_platforms = PaymentPlatform::all();
             'payment_platform' => ['required', 'exists:payment_platforms,name'],
         ]);
 
-        $paymentPlatform = resolve(PayPalService::class);
+        // $paymentPlatform = resolve(PayPalService::class);
 
-        // $paymentPlatform = $this->paymentPlatformResolver->resolveService($request->payment_platform);
+        $paymentPlatform = $this->paymentPlatformResolver->resolveService($request->payment_platform);
 
-        // session()->put('paymentPlatformId', $request->payment_platform);
+        session()->put('paymentPlatformId', $request->payment_platform);
         return $paymentPlatform->handlePayment($request);
     }
 
@@ -52,6 +52,5 @@ $payment_platforms = PaymentPlatform::all();
 
         return redirect()
             ->route('dashboard');
-            // ->withErrors('You cancelled the payment.');
     }
 }

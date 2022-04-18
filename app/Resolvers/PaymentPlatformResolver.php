@@ -15,17 +15,8 @@ class paymentPlatformResolver
 
   public function resolveService($paymentPlatformId)
   {
-// dd(strtolower($this->paymentPlatforms->firstWhere('id', $paymentPlatformId)->name));
-// if ($paymentPlatformId === '1') {
-//   $name = strtolower('PayPal');
-// }
+    $name = strtolower($this->paymentPlatforms->firstWhere('name', $paymentPlatformId)->name);
 
-//     if ($paymentPlatformId === '2') {
-//       $name = strtolower('Stripe');
-//     }
-dd();
-$name = strtolower($this->paymentPlatforms->firstWhere('id', $paymentPlatformId)->name);
-// dd($name);
     $service = config("services.{$name}.class");
 
     if ($service) {

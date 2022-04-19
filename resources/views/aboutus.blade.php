@@ -20,7 +20,7 @@
         </p>
         <p class="pb-4">
           Whether you are a designer, advertising agency, local business or national corporation, our personable and
-          knowledgeable staff can assist with your image, and extend your outreach to a targeted clientel.
+          knowledgeable staff can assist with your image, and extend your outreach to a targeted clientele.
         </p>
         <p class="pb-4">
           Throughout the years our philosophy has remained unchanged: treat your project as our own. With an emphasis on

@@ -51,7 +51,7 @@
           <p class="text-base sm:text-xl text-gray-700 sm:ml-12 pb-8 sm:mr-6 font-myriad">
             Make Your ideas really pop! Archival fine art prints, POP displays, floor graphics, backlit signage, indoor
             & outoor
-            vinyl banners, direct print on coroplast plastic media, and trade show items are some of the products we
+            vinyl banners, direct print on Coroplast plastic media, and trade show items are some of the products we
             offer. Our
             in-house laminating and mounting department can add that finishing touch to your project. Let Graphics +
             Design help

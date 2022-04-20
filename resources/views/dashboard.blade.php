@@ -43,6 +43,15 @@
 				{{ Session::put('currency', '') }}
 				@endif
 
+				@if (session('approval') === 'no_approval')
+				<div class="text-center pb-4">
+					<x-flash type="error">
+						"We cannot retreive your payment platform. Please try again"
+					</x-flash>
+				</div>
+				{{ Session::put('approval', '') }}
+				@endif
+
 				@if (session('cancelled') === 'cancelled')
 				<div class="text-center pb-4">
 					<x-flash type="error">

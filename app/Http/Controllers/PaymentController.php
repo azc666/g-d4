@@ -31,19 +31,25 @@ class PaymentController extends Controller
             'payment_platform' => ['required', 'exists:payment_platforms,name'],
         ]);
 
-        // $paymentPlatform = resolve(PayPalService::class);
-
         $paymentPlatform = $this->paymentPlatformResolver->resolveService($request->payment_platform);
 
         session()->put('paymentPlatformId', $request->payment_platform);
+// dd($paymentPlatform->handlePayment($request));
         return $paymentPlatform->handlePayment($request);
     }
 
     public function approval()
     {
-        $paymentPlatform = resolve(PayPalService::class);
+        if (session()->has('paymentPlatformId')) {
+            $paymentPlatform = $this->paymentPlatformResolver->resolveService(session()->get('paymentPlatformId'));
 
-        return $paymentPlatform->handleApproval();
+            return $paymentPlatform->handleApproval();
+        }
+
+        Session::put('approval', 'no_approval');
+
+        return redirect()
+            ->route('dashboard');
     }
 
     public function cancelled()

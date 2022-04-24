@@ -23,9 +23,12 @@
 
         <div class="mt-3">
             @if ($platform === null)
-            @else
-            @include('components.' . strtolower($platform) . '-collapse')
-            @endif
+            @elseif (strtolower($platform) === 'paypal')
+						<x-paypal-collapse />
+						@elseif (strtolower($platform) === 'stripe')
+						<x-stripe-collapse />
+
+						@endif
         </div>
 
 

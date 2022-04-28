@@ -33,8 +33,12 @@ class PaymentController extends Controller
 
         $paymentPlatform = $this->paymentPlatformResolver->resolveService($request->payment_platform);
 
+        if ($request->payment_platform === 'Stripe') {
+            dd('hola');
+        }
+
         session()->put('paymentPlatformId', $request->payment_platform);
-// dd($paymentPlatform->handlePayment($request));
+        
         return $paymentPlatform->handlePayment($request);
     }
 

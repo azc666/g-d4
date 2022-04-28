@@ -23,6 +23,8 @@
 
         <div class="mt-3">
             @if ($platform === null)
+            {{-- @else
+            @includeIf ('components.' . strtolower($paymentPlatform->name) . '-collapse') --}}
             @elseif (strtolower($platform) === 'paypal')
 						<x-paypal-collapse />
 						@elseif (strtolower($platform) === 'stripe')
